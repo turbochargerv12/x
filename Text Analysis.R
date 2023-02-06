@@ -1,3 +1,12 @@
+install.packages(c("tm", "SnowballC", "wordcloud", "RColorBrewer", "ggplot2"))
+
+# Load packages
+library(tm)
+library(SnowballC)
+library(wordcloud)
+library(RColorBrewer)
+library(ggplot2)
+
  text=readLines(file.choose())
  text=Corpus(VectorSource(text))
  text=tm_map(text,removeNumbers)
